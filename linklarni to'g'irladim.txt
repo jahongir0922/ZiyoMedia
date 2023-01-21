@@ -1,0 +1,42 @@
+about_ziyo.html
+index.html
+article.html
+show_article.html 	
+audio.html
+played_audio.html 
+contact.html
+haridlar.html
+kurslar.html
+news.html
+show_news.html
+photo.html
+show_photo.html
+video.html
+played_video.html
+show_more_main.html
+privacy_policy.html
+terms_of_use
+
+
+
+audio.html da kamchilik qoldi
+radiolar.html da kamchilik qoldi
+
+
+
+
+
+ //prev.addEventListener("click", function () {
+    //   radio[i].children[2].pause();
+    //   radio[i - 1].children[2].play();
+    //   if (i > 0) {
+    //     i--;
+    //   } else if (i == 0) {
+    //     i = radio.length - 1;
+    //   }
+    // });
+    // next.addEventListener("click", function () {
+    //   radio[i].children[2].pause();
+    //   radio[i + 1].children[2].play();
+    //   i++;
+    // });

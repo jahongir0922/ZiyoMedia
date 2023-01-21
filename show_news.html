@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/show_news.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <title>Ziyo media</title>
+  </head>
+
+  <body onload="izohlar()">
+    <div id="container">
+      <header>
+        <div id="menu_tab">
+          <img onclick="open_menu()" src="./img/svg/menu_tablet.svg" alt="" />
+          <a href="./index.html" id="logo_block_tablet">
+            <img src="./img/svg/ziyo logo 02-ver 1.svg" alt="" />
+            <div>
+              <h1>"ZIYO"</h1>
+              <h2>MEDIAMARKAZI</h2>
+            </div>
+          </a>
+        </div>
+        <div id="menu_tab_modal"></div>
+        <div id="logo_nav_lang">
+          <img
+            onclick="close_menu()"
+            id="close_tablet"
+            src="./img/icons/close.svg"
+            alt=""
+          />
+          <a href="./index.html" id="logo_block">
+            <img src="./img/svg/ziyo logo 02-ver 1.svg" alt="" />
+            <div>
+              <h1>"ZIYO"</h1>
+              <h2>MEDIAMARKAZI</h2>
+            </div>
+          </a>
+          <div id="nav">
+            <a href="./index.html" id="home" class="nav_icon">
+              <img src="./img//icons//home.svg" alt="" />
+              <span>Asosiy</span>
+            </a>
+            <a href="./radiolar.html" id="radio" class="nav_icon">
+              <img src="./img/icons/radio.svg" alt="" />
+              <span>Radiolar</span>
+            </a>
+            <a href="./video.html" id="video" class="nav_icon">
+              <img src="./img/icons/video.svg" alt="" />
+              <span>Videolar</span>
+            </a>
+            <a href="./photo.html" id="photo" class="nav_icon">
+              <img src="./img/icons/photo.svg" alt="" />
+              <span>Rasmlar</span>
+            </a>
+            <a href="./audio.html" id="audio" class="nav_icon">
+              <img src="./img/icons/audio.svg" alt="" />
+              <span>Audio</span>
+            </a>
+            <a href="./news.html" id="message" class="nav_icon active">
+              <img src="./img/icons/message_active.svg" alt="" />
+              <span>Habarlar</span>
+            </a>
+            <a href="./article.html" id="article" class="nav_icon">
+              <img src="./img/icons/article.svg" alt="" />
+              <span>Maqolalar</span>
+            </a>
+            <a href="./about_ziyo.html" id="about_ziyo" class="nav_icon">
+              <img src="./img/icons/about_ziyo.svg" alt="" />
+              <span>Ziyo haqida</span>
+            </a>
+            <a href="./contacts.html" id="contacts" class="nav_icon">
+              <img src="./img/icons/contacts.svg" alt="" />
+              <span>Kontaktlar</span>
+            </a>
+            <a href="./haridlar.html" id="Sales" class="nav_icon">
+              <img src="./img/icons/sales.svg" alt="" />
+              <span>Haridlar</span>
+            </a>
+          </div>
+          <div id="lang_block">
+            <div id="lang">
+              <img src="./img/icons/lang.svg" alt="" />
+              <div>
+                <a href="" class="active_lang">UZ</a>
+                <span>&#124;</span>
+                <a href="">RU</a>
+                <span>&#124;</span>
+                <a href="">ENG</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="search">
+          <div id="search_modal">
+            <div id="search_div">
+              <div id="search_top">
+                <h1>Qidiruv</h1>
+                <img
+                  onclick="search_close_func()"
+                  id="search_close"
+                  src="./img/icons/close.svg"
+                  alt=""
+                />
+              </div>
+              <input type="text" placeholder="Kalit so'zini kiriting" />
+              <div id="search_bottom">
+                <div class="hech_narsa_topilmadi hech_narsa_topilmadi_active">
+                  <img src="./img/icons/search_2.svg" alt="" />
+                  <p>Hozircha hech narsa topilmadi</p>
+                </div>
+                <a href="./show_more_main.html" class="search_card card_active">
+                  <img src="./img/png/rasm6.png" alt="" />
+                  <div class="card_text">
+                    <span>IMOM Al Buxoriy o'gitlari</span>
+                    <h3>Lorem Ipsum is simply dummy</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <div class="card_stats">
+                      <div>
+                        <img src="./img/icons/eye.svg" alt="" />
+                        <span>1000</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/calendar.svg" alt="" />
+                        <span>16.12.2022</span>
+                        <span>1:09</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="search_card card_active">
+                  <img src="./img/png/rasm6.png" alt="" />
+                  <div class="card_text">
+                    <span>IMOM Al Buxoriy o'gitlari</span>
+                    <h3>Lorem Ipsum is simply dummy</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                    <div class="card_stats">
+                      <div>
+                        <img src="./img/icons/eye.svg" alt="" />
+                        <span>1000</span>
+                      </div>
+                      <div>
+                        <img src="./img/icons/calendar.svg" alt="" />
+                        <span>16.12.2022</span>
+                        <span>1:09</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div onclick="search_modal()" id="search" class="nav_icon">
+            <img src="./img/icons/search.svg" alt="" />
+            <span>Qidiruv</span>
+          </div>
+        </div>
+      </header>
+      <main id="show_news">
+        <section id="show_news_left">
+          <div>
+            <a href="index.html">Asosiy></a>
+            <a href="news.html">Habarlar></a>
+            <a href="">Lorem ipsum is simply dummy</a>
+          </div>
+          <h1>Lorem Ipsum is simply dummy</h1>
+          <div class="stats">
+            <div>
+              <img src="./img/icons/eye.svg" alt="" />
+              <span>1000</span>
+            </div>
+            <div>
+              <img src="./img/icons/calendar.svg" alt="" />
+              <span>16.12.2022</span>
+              <span>1:09</span>
+            </div>
+          </div>
+          <img src="./img/png/rasm_audio.png" alt="" />
+          <div class="matn">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+          </div>
+          <div class="matn">
+            <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
+            <li>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </li>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it
+            </p>
+          </div>
+          <div class="izohlar_uchun">
+            <h1>Izohlar (<span>65</span>)</h1>
+            <div id="izoh_topilmadi">
+              <img src="./img/icons/chat.svg" alt="" />
+              <p>Hozircha hech qanday izoh topilmadi</p>
+            </div>
+            <div id="izohlar">
+              <div class="izoh">
+                <div class="izoh_malumot">
+                  <h1>Eshonov Fakhriyor</h1>
+                  <div class="sana">
+                    <img src="./img/icons/calendar.svg" alt="" />
+                    <span>16.12.2022</span>
+                    <span>1:09</span>
+                  </div>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+              </div>
+              <div class="izoh">
+                <div class="izoh_malumot">
+                  <h1>Eshonov Fakhriyor</h1>
+                  <div class="sana">
+                    <img src="./img/icons/calendar.svg" alt="" />
+                    <span>16.12.2022</span>
+                    <span>1:09</span>
+                  </div>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+              </div>
+              <div class="izoh">
+                <div class="izoh_malumot">
+                  <h1>Eshonov Fakhriyor</h1>
+                  <div class="sana">
+                    <img src="./img/icons/calendar.svg" alt="" />
+                    <span>16.12.2022</span>
+                    <span>1:09</span>
+                  </div>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+              </div>
+              <div class="izoh">
+                <div class="izoh_malumot">
+                  <h1>Eshonov Fakhriyor</h1>
+                  <div class="sana">
+                    <img src="./img/icons/calendar.svg" alt="" />
+                    <span>16.12.2022</span>
+                    <span>1:09</span>
+                  </div>
+                </div>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged. It was popularised in the 1960s with
+                  the release of Letraset sheets containing Lorem Ipsum
+                  passages, and more recently with desktop publishing software
+                  like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+              </div>
+            </div>
+            <form class="izoh_qoldirish" action="">
+              <h1>Izoh qoldiring!</h1>
+              <div class="input_tel">
+                <label for="">
+                  <li><span>* </span>Telefon raqamingiz</li>
+                  <input type="text" placeholder="+998"
+                /></label>
+                <label for="">
+                  <li>* Ism va familiya</li>
+                  <input type="text" placeholder="Ismingizni kiriting"
+                /></label>
+              </div>
+              <li>
+                <span>* </span>Diqqat! Telefon raqamingizni hech kim ko'rmaydi!
+              </li>
+              <label for="">
+                <li>Izoh (ixtiyoriy)</li>
+                <textarea name="" id="" cols="100" rows="20"></textarea>
+                <!-- <input type="text" /> -->
+              </label>
+              <input type="submit" value="Yuborish" />
+            </form>
+          </div>
+        </section>
+        <section id="show_news_rigth">
+          <div class="side_block">
+            <div class="title_with_buttun" id="xabarlar">
+              <h1>Yangiliklar</h1>
+              <a class="a_tag">Barchasini ko'rish</a>
+            </div>
+            <div class="side_btns">
+              <a href="" class="show_news_btn show_news_btn_active">
+                Barcha audiolar
+              </a>
+              <a href="" class="show_news_btn">O’xshashlar</a>
+              <a href="" class="show_news_btn">Eng so’ngilari</a>
+            </div>
+            <div class="kurs_card_block">
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm7.png" alt="" />
+                <div class="card_text">
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm8.png" alt="" />
+                <div class="card_text">
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="card_horizontal_small wow fadeInUpBig">
+                <img src="./img/png/rasm8.png" alt="" />
+                <div class="card_text">
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="card_horizontal_small wow fadeInUpBig">
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="side_block">
+            <div class="title_with_buttun" id="xabarlar">
+              <h1>Audio mahsulotlar</h1>
+              <a class="a_tag">Barchasini ko'rish</a>
+            </div>
+            <div class="kurs_card_block">
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm7.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm8.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="card_horizontal_small wow fadeInUpBig">
+                <img src="./img/png/rasm8.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="card_horizontal_small wow fadeInUpBig">
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="side_block">
+            <div class="title_with_buttun" id="xabarlar">
+              <h1>Video mahsulotlar</h1>
+              <a class="a_tag">Barchasini ko'rish</a>
+            </div>
+            <div class="kurs_card_block">
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm7.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm8.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href=""
+                class="card_horizontal_small wow fadeInUpBig card_active"
+              >
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="card_horizontal_small wow fadeInUpBig">
+                <img src="./img/png/rasm8.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="" class="card_horizontal_small wow fadeInUpBig">
+                <img src="./img/png/rasm6.png" alt="" />
+                <div class="card_text">
+                  <span>IMOM Al Buxoriy o'g'itlari</span>
+                  <h3>Lorem Ipsum is simply dummy</h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <div class="card_stats">
+                    <div>
+                      <img src="./img/icons/eye.svg" alt="" />
+                      <span>1000</span>
+                    </div>
+                    <div>
+                      <img src="./img/icons/calendar.svg" alt="" />
+                      <span>16.12.2022</span>
+                      <span>1:09</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="namoz_vaqtlari side_block">
+            <h1>Namoz vaqtlari</h1>
+            <div>
+              <div>
+                <img src="./img/bomdod.png" alt="" />
+                <h1>06:15</h1>
+                <p>Bomdod</p>
+              </div>
+              <div>
+                <img src="./img/quyosh.png" alt="" />
+                <h1>7:30</h1>
+                <p>Quyosh</p>
+              </div>
+              <div>
+                <img src="./img/peshin.png" alt="" />
+                <h1>12:30</h1>
+                <p>Peshin</p>
+              </div>
+              <div>
+                <img src="./img/asr.png" alt="" />
+                <h1>15:00</h1>
+                <p>Asr</p>
+              </div>
+              <div>
+                <img src="./img/shom.png" alt="" />
+                <h1>17:00</h1>
+                <p>Shom</p>
+              </div>
+              <div>
+                <img src="./img/xufton.png" alt="" />
+                <h1>18:30</h1>
+                <p>Xufton</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div id="footer_contact">
+          <a href="./index.html" id="footer_logo">
+            <img src="./img/svg/ziyo logo 02-ver 1.svg" alt="" />
+            <div>
+              <h1>"ZIYO"</h1>
+              <h2>MEDIAMARKAZI</h2>
+            </div>
+          </a>
+          <div id="manzil">
+            <ul>
+              <li>Aloqa:</li>
+              <div>
+                <img src="./img/icons/call.svg" alt="" />
+                <p>+998 88 330 06 66</p>
+              </div>
+            </ul>
+            <ul>
+              <li>Ro’yxatdan o’tgan manzil:</li>
+              <p>Toshkent shahri, Yunusobot tumani Ahmad Donish 11-mavze, 60</p>
+            </ul>
+            <ul>
+              <li>Shikoyatlar uchun:</li>
+              <p>+998 99 342 10 09</p>
+            </ul>
+          </div>
+          <p>Copyright © 2022 Full fill Inc. All rights reserved.</p>
+        </div>
+        <div class="link_div">
+          <ul class="footer_links">
+            <h2>Videolavhalar</h2>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+            <a href="">Imom Al Buxoriy saboqlari</a>
+          </ul>
+          <ul class="footer_links">
+            <h2>Audiolavhalar</h2>
+            <a href="">Lorem ipsum</a>
+            <a href="">Lorem ipsum</a>
+            <a href="">Lorem ipsum</a>
+            <a href="">Lorem ipsum</a>
+            <a href="">Lorem ipsum</a>
+            <a href="">Lorem ipsum</a>
+            <a href="">Lorem ipsum</a>
+            <a href="">Lorem ipsum</a>
+          </ul>
+        </div>
+        <div class="link_div">
+          <ul class="footer_links">
+            <h2>Boshqalar</h2>
+            <a href="">Fotolavhalar</a>
+            <a href="">Xabarlar</a>
+            <a href="">Ziyo haqida</a>
+            <a href="">Kontaktlar</a>
+            <a href="">Foydalanish sharlari</a>
+            <a href="">Maxfiylik siyosati</a>
+          </ul>
+          <ul class="footer_links">
+            <h2>Ijtimoiy tarmoqlar</h2>
+            <a href="" class="social">
+              <img src="./img/icons/instagram.svg" alt="" />
+              <li>Instagram</li>
+            </a>
+            <a href="" class="social">
+              <img src="./img/icons/telegram.svg" alt="" />
+              <li>Telegram</li>
+            </a>
+            <a href="" class="social">
+              <img src="./img/icons/youtube.svg" alt="" />
+              <li>Youtube</li>
+            </a>
+            <a href="" class="social">
+              <img src="./img/icons/facebook.svg" alt="" />
+              <li>Facebook</li>
+            </a>
+            <a href="" class="social">
+              <img src="./img/icons/twitter.svg" alt="" />
+              <li>Twitter</li>
+            </a>
+          </ul>
+        </div>
+        <p>Copyright © 2022 Full fill Inc. All rights reserved.</p>
+      </footer>
+    </div>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

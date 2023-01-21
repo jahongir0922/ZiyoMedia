@@ -1,0 +1,110 @@
+#radiolar_page h1 {
+  color: #3a3e40;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+#radiolar_page #player {
+  display: none;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  padding: 15px 30px 15px 15px;
+  background-color: #ffffff;
+  z-index: 9;
+  top: 150px;
+  right: 0;
+  border-radius: 18px 0px 0px 18px;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.12);
+}
+#radiolar_page #player #arrow_left {
+  cursor: pointer;
+  padding: 10px;
+  display: none;
+}
+#radiolar_page #player #radio_close {
+  display: none;
+  cursor: pointer;
+}
+#radiolar_page #player #radio_pause {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+#radiolar_page #player #radio_pause img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#radiolar_page #player #radio_pause #pause1 {
+  display: none;
+  z-index: 5;
+  width: 25px;
+}
+#radiolar_page #player #radio_pause #play1 {
+  display: none;
+  z-index: 6;
+  filter: invert(100%);
+  width: 20px;
+}
+#radiolar_page #player #radio_pause > div {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}
+#radiolar_page #player #controls {
+  display: none;
+  gap: 15px;
+  align-items: center;
+}
+#radiolar_page #player #controls > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#radiolar_page #player #controls > div > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+#radiolar_page #player #controls > div > div #black_pause {
+  filter: invert(100%);
+}
+#radiolar_page #player #controls > div > div #black_play {
+  display: none;
+}
+#radiolar_page #player .display_block {
+  display: block !important;
+}
+#radiolar_page #player .display_flex {
+  display: flex !important;
+}
+#radiolar_page #radiolar_blog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#radiolar_page #radiolar_blog > div {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+#radiolar_page #radiolar_blog > div > div {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+#radiolar_page #radiolar_blog > div > div img {
+  width: 100%;
+}
+#radiolar_page #radiolar_blog > div > li {
+  font-size: 18px;
+  color: #3a3e40;
+}/*# sourceMappingURL=radiolar.css.map */

@@ -1,0 +1,144 @@
+/**
+*
+* Testing
+*
+**/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box !important;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  transition: 0.25s;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a,
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+#section1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px 0;
+  gap: 60px;
+}
+#section1 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+#section1 .left .matn {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+#section1 .left .matn h2 {
+  color: #3a3e40;
+  font-size: 16px;
+  font-weight: 400;
+}
+#section1 .left .matn h1 {
+  color: #3a3e40;
+  font-weight: 700;
+  font-size: 36px;
+}
+#section1 .left .matn p {
+  color: #3a3e40;
+  font-weight: 400;
+  font-size: 18px;
+}
+#section1 .left .rasm {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#section1 .right {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#section1 .right > div {
+  text-align: center;
+  padding: 44px;
+  background-color: #ffffff;
+}
+#section1 .right > ul {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#section2 h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3a3e40;
+}
+#section2 .about_hamkor_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #ffffff;
+  padding: 30px 70px;
+}
+#section2 .about_hamkor_card img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+#section2 .about_hamkor_card h2 {
+  text-align: center;
+  color: #3a3e40;
+  font-weight: 700;
+  font-size: 24px;
+}
+#section2 .about_hamkor_card > p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3e40;
+}
+#section2 .about_hamkor_card > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#section2 .about_hamkor_card > ul > ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#section2 .about_hamkor_card > ul > ul img {
+  width: 25px;
+  height: 25px;
+}
+#section2 .about_hamkor_card > ul > ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3e40;
+}/*# sourceMappingURL=about_ziyo.css.map */

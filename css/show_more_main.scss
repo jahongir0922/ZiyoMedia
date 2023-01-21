@@ -1,0 +1,39 @@
+#section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #3a3e40;
+  }
+  #show_more_buttons {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    > a {
+      font-weight: 400;
+      font-size: 16px;
+      color: #3a3e40;
+      padding: 10px 24px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      &:hover {
+        background-color: #3ccc47;
+      }
+      &:active {
+        background-color: #148314;
+      }
+    }
+    .active_btn {
+      background-color: #00ab26;
+      color: #ffffff;
+    }
+  }
+  .show_more_main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

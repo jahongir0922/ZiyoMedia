@@ -1,0 +1,116 @@
+/**
+*
+* Testing
+*
+**/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box !important;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  transition: 0.25s;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+a,
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+#kurslar {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 60% 40%);
+}
+#kurslar #kurslar_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px 0;
+  gap: 30px;
+}
+#kurslar #kurslar_left a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  padding: 12px 25px;
+  border: 1px solid #e0e6e9;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+#kurslar #kurslar_left .stats {
+  display: flex;
+  gap: 10px;
+}
+#kurslar #kurslar_left .stats div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#kurslar #kurslar_left .stats div img {
+  width: 24px;
+  height: 24px;
+}
+#kurslar #kurslar_left img {
+  width: 100%;
+}
+#kurslar #kurslar_left #matn {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  gap: 20px;
+  padding: 30px;
+}
+#kurslar #kurslar_left #matn p {
+  font-weight: 400;
+  color: #677075;
+  font-size: 18px;
+}
+#kurslar #kurslar_rigth {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 45px;
+}
+#kurslar #kurslar_rigth .kurs_card_block {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#kurslar #kurslar_rigth .a_tag {
+  color: #00ab26;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+#kurslar #kurslar_rigth .a_tag:active {
+  color: #000000;
+}
+#kurslar #kurslar_rigth .side_block {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 25px;
+}/*# sourceMappingURL=kusrlar.css.map */
